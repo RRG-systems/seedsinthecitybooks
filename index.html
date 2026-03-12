@@ -1,69 +1,151 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Seeds in the City</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seeds in the City</title>
 
-<style>
-body{
-font-family: Georgia, serif;
-background:#faf7f2;
-margin:0;
-text-align:center;
-}
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      color: #2f2f2f;
+      background: url("garden.jpg") center center / cover no-repeat fixed;
+    }
 
-.container{
-max-width:800px;
-margin:auto;
-padding:60px 20px;
-}
+    .overlay {
+      min-height: 100vh;
+      background: rgba(250, 247, 242, 0.82);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      box-sizing: border-box;
+    }
 
-h1{
-font-size:42px;
-margin-bottom:10px;
-}
+    .container {
+      max-width: 900px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.72);
+      padding: 60px 30px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      backdrop-filter: blur(3px);
+    }
 
-p{
-font-size:18px;
-color:#555;
-}
+    h1 {
+      font-size: 64px;
+      margin: 0 0 20px 0;
+      line-height: 1.05;
+    }
 
-.button{
-display:inline-block;
-margin-top:30px;
-padding:15px 30px;
-background:#2e7d32;
-color:white;
-text-decoration:none;
-font-size:18px;
-border-radius:6px;
-}
+    p {
+      font-size: 28px;
+      line-height: 1.5;
+      color: #4d4d4d;
+      margin: 0 0 24px 0;
+    }
 
-.button:hover{
-background:#1b5e20;
-}
-</style>
+    .subtext {
+      font-size: 20px;
+      max-width: 760px;
+      margin: 0 auto 36px auto;
+      color: #5c5c5c;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 10px 8px;
+      padding: 16px 30px;
+      background: #2e7d32;
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      border-radius: 8px;
+      transition: background 0.2s ease;
+    }
+
+    .button:hover {
+      background: #1b5e20;
+    }
+
+    .button.secondary {
+      background: #6d8b74;
+    }
+
+    .button.secondary:hover {
+      background: #58705e;
+    }
+
+    .button.tertiary {
+      background: #9b7d52;
+    }
+
+    .button.tertiary:hover {
+      background: #7f6540;
+    }
+
+    .note {
+      margin-top: 30px;
+      font-size: 16px;
+      color: #6e6e6e;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 44px;
+      }
+
+      p {
+        font-size: 22px;
+      }
+
+      .subtext {
+        font-size: 18px;
+      }
+
+      .button {
+        display: block;
+        width: 100%;
+        max-width: 320px;
+        margin: 12px auto;
+        box-sizing: border-box;
+      }
+
+      .container {
+        padding: 40px 20px;
+      }
+    }
+  </style>
 </head>
-
 <body>
+  <div class="overlay">
+    <div class="container">
+      <h1>Seeds in the City</h1>
 
-<div class="container">
+      <p>Helping small spaces grow real food.</p>
 
-<h1>Seeds in the City</h1>
+      <div class="subtext">
+        Explore the full book series for balconies, apartments, windowsills, and urban homes.
+        Start growing herbs, vegetables, and edible plants wherever you live.
+      </div>
 
-<p>
-Small-space gardening for balconies, apartments, and urban homes.
-</p>
+      <a class="button" href="https://www.amazon.com/stores/author/B0FV2J55H2?ingress=0&visitId=d4bad2d5-a2cb-4714-8f0b-d383c107b990&ref_=aufs_ap_ahdr_dsk_ab" target="_blank">
+        View the Books on Amazon
+      </a>
 
-<p>
-Explore the full book series and start growing food anywhere.
-</p>
+      <a class="button secondary" href="#" target="_blank">
+        Free Balcony Garden Starter Guide
+      </a>
 
-<a class="button" href="https://www.amazon.com/stores/author/B0FV2J55H2?ingress=0&visitId=d4bad2d5-a2cb-4714-8f0b-d383c107b990&ref_=aufs_ap_ahdr_dsk_ab" target="_blank">
-View the Books on Amazon
-</a>
-  
-</div>
+      <a class="button tertiary" href="#" target="_blank">
+        Plant Intelligence Sheets
+      </a>
 
+      <div class="note">
+        A Worldwide Urbanists gardening series
+      </div>
+    </div>
+  </div>
 </body>
 </html>
